@@ -9,6 +9,7 @@ This project is a simple website developed for a small business specializing in 
 
 - [Features](#features)
 - [Technologies Used](#technologies-used)
+- [Website Preview](#Website-Preview)
 - [Setup Instructions](#setup-instructions)
 - [Project Structure](#project-structure)
 - [Implementation Details](#implementation-details)
@@ -42,6 +43,19 @@ This project is a simple website developed for a small business specializing in 
 - JavaScript (for form validation and image slider)
 - Bootstrap 
 
+## Website Preview
+
+![Website Preview](images\README\ImageSlider.png)
+
+image slider
+
+![Website Preview](images\README\About.png)
+
+About Mystic Makes
+
+![Website Preview](images\README\Contact.png)
+
+Contact
 ## Setup Instructions
 
 To run this project locally, follow these steps:
