@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mystic Makes</title>
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* Add any additional styles here */
+  </style>
+</head>
+
+<body>
+
+  <div class="header">
+    <div class="row">
+      <div class="leftcolumn1">
+        <img src="images/logo.png" alt="" style="width:25%">
+      </div>
+      <div class="rightcolumn1">
+        <h1>Mystic Makes</h1>
+        <p>Handmade with love !! &#x1F601 </p>
+        <div class="anime" id="anime"><img src="images/star.png" alt="" style="width:50%"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="topnav">
+    <a href="#">Home</a>
+    <a href="#aboutus">About us</a>
+    <a href="#contactus">Contact us</a>
+    <a href="#findus" style="float:right">Find us</a>
+  </div>
+  <div class="card">
+    <div class="container" id="home">
+      <!-- Full-width images with number text -->
+      <div class="mySlides">
+        <div class="numbertext">1 / 6</div>
+        <a href=""><img src="images/wide/HomeDecorWide.png" style="width:100%"></a>
+      </div>
+      <div class="mySlides">
+        <div class="numbertext">2 / 6</div>
+        <a href=""><img src="images/wide/CrochetWide.png" style="width:100%"></a>
+      </div>
+      <div class="mySlides">
+        <div class="numbertext">3 / 6</div>
+        <a href=""><img src="images/wide/ClayArtWide.png" style="width:100%"></a>
+      </div>
+      <div class="mySlides">
+        <div class="numbertext">4 / 6</div>
+        <a href=""><img src="images/wide/CardsWide.png" style="width:100%"></a>
+      </div>
+      <div class="mySlides">
+        <div class="numbertext">5 / 6</div>
+        <a href=""> <img src="images/wide/AccessoriesWide.png" style="width:100%"></a>
+      </div>
+      <div class="mySlides">
+        <div class="numbertext">6 / 6</div>
+        <a href=""><img src="images/wide/OtherWide.png" style="width:100%"></a>
+      </div>
+      <!-- Next and previous buttons -->
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      <!-- Image text -->
+      <div class="caption-container">
+        <p id="caption"></p>
+      </div>
+      <!-- Thumbnail images -->
+      <div class="row">
+        <div class="column">
+          <img class="demo cursor" src="images/thumbnails/HomeDecor.png" style="width:100%" onclick="currentSlide(1)"
+            alt="-Home decor-">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="images/thumbnails/Crochet.png" style="width:100%" onclick="currentSlide(2)"
+            alt="-Crochet-">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="images/thumbnails/ClayArt.png" style="width:100%" onclick="currentSlide(3)"
+            alt="-Clay art-">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="images/thumbnails/Cards.png" style="width:100%" onclick="currentSlide(4)"
+            alt="-Cards-">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="images/thumbnails/Accessories.png" style="width:100%" onclick="currentSlide(5)"
+            alt="-Accessories-">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="images/thumbnails/Other.png" style="width:100%" onclick="currentSlide(6)"
+            alt="-Other-">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="leftcolumn" id="aboutus">
+      <div class="card">
+        <!-- <div class="fakeimg" style="height:250px;">Image</div> -->
+        <img src="images/logo.png" alt="" style="width:85%">
+      </div>
+    </div>
+    <div class="rightcolumn">
+      <div class="card">
+        <h2>Mystic Makes</h2>
+        <h5>Handmade with love !! &#x1F601 </h5>
+        <p>What we have for you ?..</p>
+        <p>Welcome to Mystic Makes, where every creation is handmade with love! 😊 At Mystic Makes, we pride ourselves
+          on offering a unique selection of artisanal crafts that are perfect for adding a personal touch to your home
+          and life. Our collection includes beautiful home decor, intricate crochet pieces, delicate clay art, charming
+          handmade cards, stylish accessories, and much more. Each item is crafted with meticulous attention to detail
+          and a passion for creativity, ensuring that you receive a one-of-a-kind treasure. Whether you're looking for
+          the perfect gift or a special treat for yourself, Mystic Makes has something special just for you. Explore our
+          handmade wonders and experience the magic of handcrafted art!</p>
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="container">
+      <section id="contactus" class="contact-section">
+        <h2>Contact Us</h2>
+        <form id="contactForm" name="contactForm" onsubmit="return validateForm(event)" method="post">
+          <div class="form-group" id="name">
+            <label for="name">Name</label>
+            <input type="text" id="fname" name="fname">
+            <b><div class="formerror"> </div></b>
+          </div>
+          <div class="form-group" id="email">
+            <label for="email">Email</label>
+            <input type="email" id="femail" name="femail">
+            <b><div class="formerror"> </div></b>
+          </div>
+          <div class="form-group" id="message">
+            <label for="message">Message</label>
+            <textarea id="fmsg" rows="4" name="fmsg"></textarea>
+            <b><div class="formerror"> </div></b>
+          </div>
+          <button type="submit" class="submit-button">Submit</button>
+        </form>
+        <div id="successMessage" style="display:none; color: green; margin-top: 20px;">
+          Form submitted successfully!
+        </div>
+      </section>
+    </div>
+  </div>
+  <div class="footer" id="findus">
+    <h2>Follow us on</h2>
+    <h5> Instagram : MysticMakes_ </h5>
+    <h5> Facebook : MysticMakes_</h5>
+  </div>
+
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="scripts.js"></script>
+</body>
+
+</html>
