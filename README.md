@@ -45,17 +45,17 @@ This project is a simple website developed for a small business specializing in 
 
 ## Website Preview
 
-![Website Preview](images\README\ImageSlider.png)
+![Image Slider](./images/README/ImageSlider.png)
+*Image Slider*
 
-image slider
 
-![Website Preview](images\README\About.png)
+![About Section](./images/README/About.png)
+*About Mystic Makes*
 
-About Mystic Makes
 
-![Website Preview](images\README\Contact.png)
+![Contact Section](./images/README/Contact.png)
+*Contact Section*
 
-Contact
 ## Setup Instructions
 
 To run this project locally, follow these steps:
